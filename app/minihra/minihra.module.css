@@ -1,0 +1,229 @@
+.page {
+  min-height: calc(100vh - 120px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: #fff;
+}
+
+.card {
+  width: 560px;
+  height: 360px;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+.cardShow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.surface {
+  position: absolute;
+  inset: 0;
+}
+
+.step {
+  position: absolute;
+  left: 18px;
+  top: 14px;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 13px;
+}
+
+.stepSmall {
+  left: 14px;
+  top: 14px;
+}
+
+.count {
+  position: absolute;
+  right: 20px;
+  top: 18px;
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 56px;
+  font-weight: 700;
+}
+
+.countLabel {
+  position: absolute;
+  right: 22px;
+  top: 72px;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 10px;
+}
+
+.mixCard {
+  width: 560px;
+  height: 360px;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  position: relative;
+  overflow: hidden;
+  background: #874b00;
+}
+
+.mixBody {
+  position: absolute;
+  inset: 0;
+}
+
+.colorRail {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 24px;
+  height: 100%;
+  border-radius: 12px 0 0 12px;
+  background: linear-gradient(to bottom, #ff1a1a 0%, #ffbf00 17%, #6cf200 34%, #00e8ff 50%, #214cff 67%, #ff00f5 84%, #ff1a1a 100%);
+}
+
+.valueRail {
+  position: absolute;
+  left: 28px;
+  top: 0;
+  width: 24px;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.5) 35%, rgba(0, 0, 0, 0.95) 100%);
+}
+
+.hueKnob,
+.valueKnob {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.28);
+}
+
+.hueKnob {
+  left: 7px;
+  top: 12px;
+}
+
+.valueKnob {
+  left: 34px;
+  top: 120px;
+}
+
+.mixLabel {
+  position: absolute;
+  left: 126px;
+  bottom: 18px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 12px;
+  letter-spacing: 0.28em;
+}
+
+.mixIcon {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #fff;
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+  font-size: 18px;
+}
+
+.label {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 8px;
+}
+
+.mixLabel {
+  position: absolute;
+  left: 98px;
+  bottom: 18px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 11px;
+  letter-spacing: 0.28em;
+}
+
+.mixIcon {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fff;
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+  font-size: 18px;
+  border: none;
+}
+
+.resultCard {
+  width: 560px;
+  height: 360px;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  position: relative;
+  overflow: hidden;
+  background: #8b5f06;
+}
+
+.resultValue {
+  position: absolute;
+  right: 20px;
+  top: 12px;
+  color: #fff;
+  font-size: 74px;
+  font-weight: 700;
+}
+
+.resultMetaTop,
+.resultMetaBottom {
+  position: absolute;
+  left: 18px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 11px;
+}
+
+.resultMetaTop {
+  top: 64px;
+}
+
+.resultMetaBottom {
+  bottom: 18px;
+}
+
+.resultHex {
+  margin-top: 4px;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.next {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fff;
+  border: none;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 900px) {
+  .mixCard,
+  .resultCard,
+  .card {
+    width: min(560px, 92vw);
+  }
+}

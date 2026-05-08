@@ -49,6 +49,7 @@ export default function Navbar() {
             <li><Link href="/moodboard">Moodboard</Link></li>
             <li><Link href="/galerie">Galerie</Link></li>
             <li><Link href="/uceni">Učení</Link></li>
+            <li><Link href="/minihra">Minihra</Link></li>
           </ul>
         </div>
 
@@ -98,6 +99,7 @@ export default function Navbar() {
           <li><Link href="/moodboard" onClick={() => setMenuOpen(false)}>Moodboard</Link></li>
           <li><Link href="/galerie" onClick={() => setMenuOpen(false)}>Galerie</Link></li>
           <li><Link href="/uceni" onClick={() => setMenuOpen(false)}>Učení</Link></li>
+          <li><Link href="/minihra" onClick={() => setMenuOpen(false)}>Minihra</Link></li>
         </ul>
         <ul className="down-links">
           <li><Link href="/oblibene" onClick={() => setMenuOpen(false)}>Oblíbené</Link></li>
